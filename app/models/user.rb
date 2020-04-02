@@ -14,8 +14,8 @@ class User < ApplicationRecord
 
   # validations
 
-  validates :username, presence: true, length: { minimum: 4, maximum: 20 }, unique: true
+  validates :username, presence: true, length: { minimum: 4, maximum: 20 }, uniqueness: {case_sensitive: false}
   validates :full_name, presence: true, length: {mimium: 7, maximum: 50}
-  validates :email, presence: true, unique: true
+  validates :email, presence: true, uniqueness: {case_sensitive: false}
 
 end
