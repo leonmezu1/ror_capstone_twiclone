@@ -17,11 +17,11 @@ ActiveRecord::Schema.define(version: 2020_04_02_020648) do
 
   create_table "followings", force: :cascade do |t|
     t.bigint "user_id", null: false
-    t.bigint "usertofollow_id", null: false
+    t.bigint "follower_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["follower_id"], name: "index_followings_on_follower_id"
     t.index ["user_id"], name: "index_followings_on_user_id"
-    t.index ["usertofollow_id"], name: "index_followings_on_usertofollow_id"
   end
 
   create_table "likes", force: :cascade do |t|
@@ -56,7 +56,7 @@ ActiveRecord::Schema.define(version: 2020_04_02_020648) do
   end
 
   add_foreign_key "followings", "users"
-  add_foreign_key "followings", "users", column: "usertofollow_id"
+  add_foreign_key "followings", "users", column: "follower_id"
   add_foreign_key "likes", "opinions"
   add_foreign_key "likes", "users"
   add_foreign_key "opinions", "users"
