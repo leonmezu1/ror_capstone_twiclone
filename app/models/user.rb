@@ -12,4 +12,10 @@ class User < ApplicationRecord
   has_many :followed_users, through: :inverse_followerships, source: :user
   has_many :followers, through: :followerships, source: :follower
 
+  # validations
+
+  validates :username, presence: true, length: { minimum: 4, maximum: 20 }, unique: true
+  validates :full_name, presence: true, length: {mimium: 7, maximum: 50}
+  validates :email, presence: true, unique: true
+
 end
