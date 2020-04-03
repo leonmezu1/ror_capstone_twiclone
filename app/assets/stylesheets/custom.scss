@@ -85,6 +85,7 @@ main {
   font-size: 1.6rem;
   color: $maincolor;
   text-align: center;
+  z-index: 15 !important;
 }
 
 input[type="email"],
@@ -97,19 +98,30 @@ input[type="text"] {
   border-radius: 0.5rem;
 }
 
+.field_with_errors {
+  color: #D8000C;
+  text-transform: capitalize;
+  text-align: center;
+  input {
+    border: 1px solid red;
+  }
+}
+
 .login {
+
+  width: 60%;
   height: 4.5rem;
-  width: 80%;
   border: 1px solid $maincolor;
   border-radius: 0.5rem;
   font-size: 1.6rem;
-  align-self: center;
+  text-align: center;
 }
 
 .login:hover,
 .login:active {
   background-color: $maincolor;
   border-radius: 0.5rem;
+  border: 1px solid $maincolor;
 }
 
 .login:focus {

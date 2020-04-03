@@ -18,6 +18,12 @@ gem 'jbuilder', '~> 2.7'
 
 gem 'devise'
 
+gem 'simple_form'
+
+gem 'client_side_validations'
+
+gem 'client_side_validations-simple_form'
+
 gem 'pg'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'

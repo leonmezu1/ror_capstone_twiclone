@@ -6,6 +6,6 @@ class CreateFollowings < ActiveRecord::Migration[6.0]
 
       t.timestamps
     end
-    add_foreign_key :followings, :users, column: :follower_id
+    add_foreign_key :followings, :users, column: :follower_id, on_delete: :cascade
   end
 end
