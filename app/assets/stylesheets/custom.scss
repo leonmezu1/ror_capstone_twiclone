@@ -19,12 +19,26 @@ $font-secondary: lighten(#414464, 27%);
   color: $maincolor !important;
 }
 
+.logo {
+    flex-direction: row;
+    text-align: center;
+    font-family: 'Sacramento', cursive;
+}
+
 .logo-size-big {
-  font-size: 10rem;
+  font-size: 7rem;
 }
 
 .logo-size-medium {
   font-size: calc(3rem + 0.5vw);
+}
+
+.logo-text {
+  color: black;
+}
+
+.logo-text strong {
+  color: $auxcolor;
 }
 
 .shadowed-box {
@@ -46,6 +60,8 @@ main {
 
 .middle-focus {
     width: 33%;
+    background: #fff;
+    border-radius: 2rem;
 }
 
 #new_user {
@@ -61,14 +77,6 @@ main {
   background-size: contain stretch;
   background-repeat: no-repeat;
   background-position-x: right;
-}
-
-.logo-text {
-  color: #fff;
-}
-
-.logo-text strong {
-  color: $auxcolor;
 }
 
 .icon {
