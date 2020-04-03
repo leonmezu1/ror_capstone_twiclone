@@ -8,7 +8,6 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require('@client-side-validations/client-side-validations')
-require("packs/form_validation")
 require("channels")
 require("jquery")
 
