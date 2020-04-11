@@ -1,0 +1,143 @@
+$maincolor: #1b2a3d;
+$auxcolor: #51a5e5;
+$font-main: rgb(92, 95, 122);
+$font-secondary: lighten(#414464, 27%);
+
+.mn-clr {
+  background-color: $maincolor;
+}
+
+.white-bg {
+  background-color: #fff;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+.mn-clr-text {
+  color: $maincolor !important;
+}
+
+.logo {
+    flex-direction: row;
+    text-align: center;
+    font-family: 'Sacramento', cursive;
+}
+
+.logo-size-big {
+  font-size: 7rem;
+}
+
+.logo-size-medium {
+  font-size: calc(3rem + 0.5vw);
+}
+
+.logo-text {
+  color: black;
+}
+
+.logo-text strong {
+  color: $auxcolor;
+}
+
+.shadowed-box {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 1px 2px 10px 5px #ccc;
+}
+
+html {
+  font-size: 10px;
+}
+
+main {
+  color: $font-main;
+  background-color: darken(#fdfcfc, 0.1%);
+}
+
+/* Login styling */
+
+.middle-focus {
+    width: 33%;
+    background: #fff;
+    border-radius: 2rem;
+}
+
+#new_user {
+    width: 90%
+}
+
+.form-content {
+  font-size: 1.4rem;
+  flex-grow: 1;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, rgba(27, 42, 61, 0.85) 35%, rgba(81, 165, 229, 0.45)), url(background2.jpg);
+  background-size: contain stretch;
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+
+.icon {
+  top: 2.2rem;
+  left: 1rem;
+  font-size: 1.6rem;
+  color: $maincolor;
+  text-align: center;
+  z-index: 15 !important;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  text-align: left;
+  padding: 1rem 1rem 1rem 5.5rem;
+  width: 100%;
+  border: 1px solid $maincolor;
+  border-radius: 0.5rem;
+}
+
+.field_with_errors {
+  color: #D8000C;
+  text-transform: capitalize;
+  text-align: center;
+  input {
+    border: 1px solid red;
+  }
+}
+
+.login {
+
+  width: 60%;
+  height: 4.5rem;
+  border: 1px solid $maincolor;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.login:hover,
+.login:active {
+  background-color: $maincolor;
+  border-radius: 0.5rem;
+  border: 1px solid $maincolor;
+}
+
+.login:focus {
+  box-shadow: 0 0 0 0.2rem rgba($maincolor, 0.5);
+  border-radius: 0.5rem;
+}
+
+.bottom {
+  margin: 20rem 0 2rem 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 0.5rem;
+}
+
+.register {
+  font-weight: 700;
+  color: $auxcolor;
+}
+
+/* End login styling */
